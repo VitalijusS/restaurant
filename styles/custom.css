@@ -30,10 +30,10 @@
 a.active {
     background-color: var(--accent);
     border: 1px solid var(--accent);
-    color: black!important;
+    color: #333!important;
 }
 a.active:hover {
-    color: black!important;
+    color: #aaa!important;
     background-color: black;
     border: 1px solid black;
 }

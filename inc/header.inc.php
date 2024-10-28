@@ -1,3 +1,11 @@
+<?php
+if (!isset($imgURL)) {
+    $imgURL = './images/pexels-engin-akyurt-1435904.jpg';
+}
+if (!isset($title)) {
+    $title = 'Page';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,9 +22,9 @@
         <h1 class="header">Culinary Cove</h1>
         <p class="header">Your sanctuary for exceptional flavors</p>
         <nav>
-            <a href="./">Our mission</a>
-            <a href="./ingredients.php">Ingredients</a>
-            <a href="./menu.php">Menu</a>
+            <a <?php if ($title === 'Our mission'): ?> class="active" <?php endif; ?> href="./">Our mission</a>
+            <a <?php if ($title === 'Ingredients'): ?> class="active" <?php endif; ?> href="./ingredients.php">Ingredients</a>
+            <a <?php if ($title === 'Menu'): ?> class="active" <?php endif; ?> href="./menu.php">Menu</a>
         </nav>
     </header>
 
